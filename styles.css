@@ -1,0 +1,150 @@
+/* Estilo personalizado */
+body {
+    background-color: #d2f4fa; /* Fondo en tono celeste suave */
+}
+
+.navbar {
+    background-color: #10f3f3 ; /* Color Cian brillante para la barra de navegación */
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important; /* Texto blanco en la barra de navegación */
+    /* Los textos en los elementos de la barra de navegación (como el logo y los enlaces) son blancos */
+}
+
+
+.hero-section {
+    border: 4px dashed #5a0d8c; /* Borde punteado morado oscuro */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra 3D */
+    margin: 20px auto; /* Espaciado superior e inferior (20px) y centrado automático horizontal */
+    max-width: 80%; /* Limitar el ancho de la sección al 80% del contenedor */
+}  
+
+.top-bar {
+    background-color: #10f3f3;
+    font-size: 10px; /* Cambia el tamaño de la fuente (puedes ajustarlo) */
+    border-bottom: 2px solid #10f3f3; /* Línea inferior cian brillante */
+    padding: 10px 0;
+}
+
+.top-bar .container {
+    display: flex; /* Utiliza flexbox para organizar los elementos en línea */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center;  /* Alinea verticalmente los elementos al centro */
+}
+
+.categories a {
+    margin: 0 5px; /* Espaciado horizontal de 5px entre los enlaces */
+    color: #5a0d8c; /* Color morado */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces más grueso */
+}
+
+.categories a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+.search-bar input {
+    padding: 1px; /* Tamaño del buscador*/
+    width: 200px; 
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon img {
+    width: 20px; /* Tamaño de los iconos de redes sociales*/
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el cursor */
+}
+
+.search-bar {
+    margin-right: 50px; /* Añade margen a la derecha para separar de los iconos */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(16, 250, 67, 0.1);
+    transition: transform 0.3s;
+    /* Las tarjetas de productos no tienen borde, tienen bordes redondeados de 10px y sombra sutil. 
+       La transición en la propiedad "transform" se aplica durante 0.3 segundos */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Efecto de hover */
+    /* Cuando el mouse pasa sobre la tarjeta, esta se agranda un 5% debido al efecto de hover */
+}
+
+.card-title {
+    color: #5a0d8c;
+    /* El título dentro de la tarjeta de producto tiene un color morado oscuro */
+}
+
+.btn-custom {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    /* El botón personalizado tiene un fondo morado, texto blanco y sin borde */
+}
+
+.btn-custom:hover {
+    background-color: #450470; /* Color más oscuro en hover */
+    /* Cuando el usuario pasa el mouse sobre el botón, el fondo se oscurece */
+}
+
+footer {
+    background-color: #10f3f3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    /* El pie de página tiene un fondo cian brillante, texto blanco, está centrado y tiene relleno arriba y abajo de 10px */
+}
+
+.thank-you-message {
+    display: none; /* Oculto por defecto */
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #28a745; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado dentro del rectángulo */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto en el centro */
+    width: auto; /* Ajusta el ancho al contenido */
+    max-width: 90%; /* Establece un ancho máximo para no ser demasiado grande */
+    margin-left: auto; /* Centrado horizontalmente */
+    margin-right: auto; /* Centrado horizontalmente */
+}
+
+.product-card:active .thank-you-message {
+    display: block; /* Aparece cuando el botón es presionado */
+    /* El mensaje de agradecimiento se muestra cuando la tarjeta de producto es presionada (estado activo) */
+}
+
+.btn-outline-custom {
+    color: #8a2be2;
+    border: 2px solid #8a2be2;
+    background-color: transparent;
+    /* El botón con borde personalizado tiene texto y borde morado y fondo transparente */
+}
+
+.btn-outline-custom:hover {
+    background-color: #8a2be2;
+    color: white;
+    border-color: #8a2be2;
+    /* Cuando el usuario pasa el mouse sobre el botón, el fondo se vuelve morado y el texto cambia a blanco "Más productos" */
+}
